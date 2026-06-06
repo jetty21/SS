@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Scribble Street — a modern boutique creative agency. Bold ideas. Sharp execution. Made to be noticed." />
+  <title>Scribble Street — Made To Be Noticed</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Permanent+Marker&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' fill='%23e3242b'>*</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Global grain / noise overlay ===== -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== Hidden SVG defs (reusable graphics) ===== -->
+  <svg width="0" height="0" class="svg-defs" aria-hidden="true">
+    <defs>
+      <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <a href="#top" class="logo" aria-label="Scribble Street home">
+      <span class="logo-text">Scribble<br>Street</span>
+      <span class="logo-star">*</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#work" class="nav-link is-active">Work</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-red header-cta">
+      Start a Project
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+
+      <div class="hero-copy reveal">
+        <h1 class="hero-title">
+          We Don't<br>
+          Follow Trends.<br>
+          We <span class="hl-red">Start<span class="scribble-red" aria-hidden="true">
+            <svg viewBox="0 0 320 46" preserveAspectRatio="none"><path d="M6 30 C70 14 150 34 230 20 C275 12 300 18 314 26" /><path d="M22 40 C100 26 180 42 280 30" /></svg>
+          </span></span> Them.
+        </h1>
+
+        <p class="hero-sub">Bold ideas. Sharp execution.<br>Made to be noticed.</p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-red">
+            Start a Project
+            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#work" class="btn btn-ghost">
+            See Our Work
+            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <svg class="hero-scrawl" viewBox="0 0 160 70" aria-hidden="true"><path d="M6 60 C 30 10, 50 65, 70 30 S 110 5, 150 40" fill="none" stroke="#f1f0ea" stroke-width="2" stroke-linecap="round" opacity=".5"/></svg>
+        <span class="hero-x" aria-hidden="true">✕</span>
+      </div>
+
+      <!-- Collage -->
+      <div class="hero-collage reveal" aria-label="Visual collage">
+        <div class="paper paper-city">
+          <div class="ph ph-city" role="img" aria-label="City skyline at night"></div>
+          <span class="tape tape-1"></span>
+        </div>
+
+        <div class="paper paper-ss">
+          <span class="marker-ss">SS<span class="star-lime">*</span></span>
+        </div>
+
+        <div class="paper paper-noticed">
+          <span class="tape tape-2"></span>
+          <h2 class="noticed">Made<br>To Be<br>Noticed.</h2>
+          <svg class="scribble-white" viewBox="0 0 200 24" aria-hidden="true"><path d="M6 14 C60 4 140 20 194 8" fill="none" stroke="#f1f0ea" stroke-width="4" stroke-linecap="round"/></svg>
+          <span class="badge badge-norules" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="circ1" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <text class="badge-text"><textPath href="#circ1" startOffset="0">★ NO RULES ★ EST. 2024 ★ SS ★&nbsp;</textPath></text>
+            </svg>
+            <span class="star-lime badge-star">*</span>
+          </span>
+        </div>
+
+        <div class="note note-hits">
+          <span class="tape tape-3"></span>
+          Creative<br>That Hits<br>Different.
+          <svg class="ul-lime" viewBox="0 0 120 14" aria-hidden="true"><path d="M4 8 C40 2 90 12 116 5" fill="none" stroke="#b9e529" stroke-width="3.5" stroke-linecap="round"/></svg>
+        </div>
+
+        <svg class="scribble-lime-1" viewBox="0 0 120 50" aria-hidden="true"><path d="M6 40 C 30 6, 50 44, 74 20 S 110 8, 116 30" fill="none" stroke="#b9e529" stroke-width="4" stroke-linecap="round"/><path d="M10 46 C 40 18, 70 48, 112 36" fill="none" stroke="#b9e529" stroke-width="4" stroke-linecap="round"/></svg>
+
+        <span class="built-diff" aria-hidden="true">Built<br>Different</span>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <div class="estd">
+        <span class="estd-name">Scribble Street</span>
+        <span class="estd-year">ESTD: 2024</span>
+      </div>
+      <div class="barcode" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="services-head reveal">
+      <p class="eyebrow eyebrow-red">What We Do</p>
+      <h2 class="section-title">
+        Everything<br>Your Brand<br>Needs To<br>Show Up<br>Louder.
+        <svg class="ul-red-2" viewBox="0 0 280 22" aria-hidden="true"><path d="M6 12 C80 4 180 18 274 8" fill="none" stroke="#e3242b" stroke-width="5" stroke-linecap="round"/></svg>
+      </h2>
+
+      <svg class="arrow-lime" viewBox="0 0 130 60" aria-hidden="true"><path d="M120 8 C 80 24, 50 30, 14 48" fill="none" stroke="#b9e529" stroke-width="3.5" stroke-linecap="round"/><path d="M14 48 L 38 44 M14 48 L 24 26" fill="none" stroke="#b9e529" stroke-width="3.5" stroke-linecap="round"/></svg>
+
+      <div class="services-collage" aria-hidden="true">
+        <div class="ph ph-city ph-small"></div>
+        <span class="marker-ss marker-ss-2">SS</span>
+        <span class="badge-rebel"></span>
+        <div class="note note-norules">No Rules.<br>Just Impact.
+          <svg class="ul-lime" viewBox="0 0 110 12"><path d="M4 7 C40 2 80 11 106 5" fill="none" stroke="#b9e529" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-side">
+      <span class="badge badge-built" aria-hidden="true">
+        <svg viewBox="0 0 130 130">
+          <defs><path id="circ2" d="M65,65 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs>
+          <text class="badge-text badge-text-lime"><textPath href="#circ2" startOffset="0">• BUILT TO BE DIFFERENT • SS • &nbsp;</textPath></text>
+        </svg>
+        <span class="star-lime badge-star">*</span>
+      </span>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="10" y="12" width="28" height="24" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="24" y="28" text-anchor="middle" font-family="Permanent Marker" font-size="11" fill="currentColor">SS</text><g fill="currentColor"><rect x="7" y="9" width="6" height="6"/><rect x="35" y="9" width="6" height="6"/><rect x="7" y="33" width="6" height="6"/><rect x="35" y="33" width="6" height="6"/></g></svg>
+          </span>
+          <h3 class="card-title">Brand<br>Identity</h3>
+          <span class="card-x" aria-hidden="true">✕</span>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="24" r="15"/><circle cx="15" cy="20" r="2.4" fill="currentColor" stroke="none"/><circle cx="30" cy="30" r="2.4" fill="currentColor" stroke="none"/><path d="M15 20 C 24 14, 22 30, 30 30"/><path d="M30 30 l 6 -7 m-6 7 l 1 -8" stroke-linecap="round"/><path d="M11 16 l3 -3 m-3 3 l3 3" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="card-title">Campaign<br>Strategy</h3>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M26 6 L13 26 h9 l-3 16 16 -22 h-9 z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="card-title">Advertising</h3>
+          <svg class="card-scrib" viewBox="0 0 70 24" aria-hidden="true"><path d="M4 16 C24 4 46 22 66 8" fill="none" stroke="#b9e529" stroke-width="3" stroke-linecap="round"/><path d="M8 20 C28 10 48 24 64 14" fill="none" stroke="#b9e529" stroke-width="3" stroke-linecap="round"/></svg>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-dot" aria-hidden="true"></span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M24 8 L38 16 V32 L24 40 L10 32 V16 Z"/><path d="M10 16 L24 24 L38 16 M24 24 V40"/></svg>
+          </span>
+          <h3 class="card-title">Packaging<br>Design</h3>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="20" width="32" height="20" rx="1"/><path d="M8 20 L13 11 L19 18 L25 9 L31 16 L37 7" stroke-linejoin="round"/><path d="M8 16 L40 10" /></svg>
+          </span>
+          <h3 class="card-title">Film &amp;<br>Content</h3>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-x card-x-lime" aria-hidden="true">✕</span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 12 h28 a2 2 0 0 1 2 2 v16 a2 2 0 0 1 -2 2 H22 l-8 7 v-7 h-4 a2 2 0 0 1 -2 -2 V14 a2 2 0 0 1 2 -2 Z"/><path d="M24 28 c-7 -5 -9 -11 -4 -13 c2.5 -1 4 1 4 2.5 c0 -1.5 1.5 -3.5 4 -2.5 c5 2 3 8 -4 13 z" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <h3 class="card-title">Social<br>Media</h3>
+        </article>
+      </div>
+    </div>
+
+    <span class="build-diff-vert" aria-hidden="true">Build<br>Different<br>Unapologetic</span>
+  </section>
+
+  <!-- ===== WORK ===== -->
+  <section class="work" id="work">
+    <div class="work-head">
+      <div class="reveal">
+        <p class="index-num">03.</p>
+        <p class="eyebrow eyebrow-lime">Our Work</p>
+        <h2 class="section-title work-title">
+          Work That<br>Doesn't <span class="hl-red">Whisper.</span>
+          <svg class="ul-lime-2" viewBox="0 0 260 20" aria-hidden="true"><path d="M6 11 C80 3 180 17 254 7" fill="none" stroke="#b9e529" stroke-width="4.5" stroke-linecap="round"/></svg>
+        </h2>
+      </div>
+
+      <div class="work-head-right reveal">
+        <span class="star-red big-star" aria-hidden="true">*</span>
+        <p class="work-note">Some projects we're proud of.<br>More on the way.</p>
+        <div class="filmstrip" aria-hidden="true">
+          <div class="filmstrip-note">
+            <span class="tape tape-2"></span>
+            Ideas <span class="arrow-i">↩</span><br>
+            <span class="circle-word">Execution</span> <span class="arrow-i">↪</span><br>
+            Impact
+          </div>
+          <div class="film">
+            <div class="ph ph-red-film"></div>
+            <div class="ph ph-red-film"></div>
+            <div class="ph ph-red-film"></div>
+          </div>
+          <span class="star-lime film-star">✳</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-grid">
+      <a class="proj reveal" href="#" aria-label="HUES — Brand Launch">
+        <div class="ph proj-img ph-box-dark"></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">Brand Launch</p>
+        <h3 class="proj-name">Hues</h3>
+      </a>
+
+      <a class="proj reveal" href="#" aria-label="WILD STONE — Packaging System">
+        <div class="ph proj-img ph-red-product"></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">Packaging System</p>
+        <h3 class="proj-name">Wild Stone</h3>
+      </a>
+
+      <a class="proj reveal" href="#" aria-label="PUNKED — Social Campaign">
+        <div class="ph proj-img ph-portrait-1"><span class="proj-overlay">Don't<br>Blend In</span></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">Social Campaign</p>
+        <h3 class="proj-name">Punked</h3>
+      </a>
+
+      <a class="proj reveal" href="#" aria-label="RISE — Product Film">
+        <div class="ph proj-img ph-rise"><span class="proj-rise">RISE</span><span class="proj-rise-sub">A film by<br>Scribble Street</span></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">Product Film</p>
+        <h3 class="proj-name">Rise</h3>
+      </a>
+
+      <a class="proj reveal" href="#" aria-label="CULTSPORT — Website / E-commerce">
+        <div class="ph proj-img ph-laptop"><span class="proj-built">Built<br>Different</span></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">Website / E-commerce</p>
+        <h3 class="proj-name">Cultsport</h3>
+      </a>
+
+      <a class="proj reveal" href="#" aria-label="BOLD IDEAS — Pitch Deck">
+        <div class="ph proj-img ph-deck"><span class="proj-deck">Bold<br>Ideas<br>Brave<br>Brands</span></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">Pitch Deck</p>
+        <h3 class="proj-name">Bold Ideas</h3>
+      </a>
+
+      <a class="proj reveal" href="#" aria-label="FUEL — AI Visual Campaign">
+        <div class="ph proj-img ph-lime-portrait"><span class="proj-fuel">Fuel<br>The Next<br>Move</span></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">AI Visual Campaign</p>
+        <h3 class="proj-name">Fuel</h3>
+      </a>
+
+      <a class="proj reveal" href="#" aria-label="JACKED — Digital Ads">
+        <div class="ph proj-img ph-phone"><span class="proj-jacked">Jacked</span><span class="proj-jacked-sub">Fuel Your<br>Fire</span></div>
+        <svg class="proj-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p class="proj-cat">Digital Ads</p>
+        <h3 class="proj-name">Jacked</h3>
+      </a>
+    </div>
+
+    <div class="work-foot reveal">
+      <a href="#contact" class="btn btn-tape">
+        <span class="tape tape-mid"></span>
+        ✳ View All Work
+        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about-copy reveal">
+      <p class="index-num">04.</p>
+      <p class="eyebrow eyebrow-lime">About Us</p>
+      <h2 class="section-title about-title">
+        Built Lean.<span class="star-lime inline-star">*</span><br>
+        Wired Sharp.<br>
+        <span class="hl-red">Allergic To Boring.</span>
+        <svg class="ul-lime-3" viewBox="0 0 300 20" aria-hidden="true"><path d="M6 11 C90 3 200 17 294 7" fill="none" stroke="#b9e529" stroke-width="4.5" stroke-linecap="round"/></svg>
+      </h2>
+
+      <div class="about-body">
+        <p>Scribble Street is a modern boutique creative agency for brands that don't have time for slow decks, endless meetings, or safe ideas.</p>
+        <p>We bring together strategy, design, advertising, content, film, packaging, digital, and AI-powered execution to move faster without making the work feel cheap.</p>
+        <p>We're not here to be the biggest.<br>We're here to be the one that hits different.</p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-tag">Since</span>
+          <span class="stat-num">2024
+            <svg class="ul-lime" viewBox="0 0 90 12"><path d="M4 7 C30 2 60 11 86 5" fill="none" stroke="#b9e529" stroke-width="3" stroke-linecap="round"/></svg>
+          </span>
+          <span class="stat-desc">Young. Hungry.<br>Always learning.</span>
+        </div>
+        <div class="stat">
+          <span class="stat-tag">Focus</span>
+          <span class="stat-icon star-lime">✳</span>
+          <span class="stat-desc">Ideas that hit.<br>Work that lasts.</span>
+        </div>
+        <div class="stat">
+          <span class="stat-tag">Approach</span>
+          <span class="stat-icon"><svg viewBox="0 0 30 30"><path d="M16 4 L9 17 h6 l-3 9 11 -15 h-6 z" fill="#b9e529"/></svg></span>
+          <span class="stat-desc">Strategic thinking.<br>Creative execution.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-collage reveal" aria-hidden="true">
+      <div class="ph ph-portrait-bw"></div>
+      <div class="note note-partner">
+        <span class="tape tape-1"></span>
+        Not Another<br>Agency.<br>
+        <span class="lime-txt">A Creative<br>Partner.</span>
+      </div>
+      <div class="ph ph-red-film-strip"></div>
+      <span class="tape-banner">Strategy <span class="x-red">✕</span> Creativity <span class="x-red">✕</span> Culture</span>
+      <svg class="scrawl-bw scrawl-1" viewBox="0 0 90 60"><path d="M6 50 C 30 6, 46 56, 64 22 S 86 18, 86 34" fill="none" stroke="#f1f0ea" stroke-width="1.6" opacity=".6" stroke-linecap="round"/></svg>
+      <svg class="scribble-lime-2" viewBox="0 0 130 40"><path d="M6 30 C40 6 80 38 124 14" fill="none" stroke="#b9e529" stroke-width="3.5" stroke-linecap="round"/><path d="M10 36 C44 16 84 40 120 22" fill="none" stroke="#b9e529" stroke-width="3.5" stroke-linecap="round"/></svg>
+    </div>
+
+    <div class="about-tagline reveal" aria-hidden="false">
+      <span class="globe-ico"><svg viewBox="0 0 30 30" fill="none" stroke="#b9e529" stroke-width="1.4"><circle cx="15" cy="15" r="11"/><ellipse cx="15" cy="15" rx="5" ry="11"/><path d="M4 15 h22 M6 9 h18 M6 21 h18"/></svg></span>
+      Creative From The Street.<br>Built For Brands That Move.
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="process" id="process">
+    <div class="process-head reveal">
+      <p class="index-num">05.</p>
+      <p class="eyebrow eyebrow-lime">Our Process</p>
+      <h2 class="section-title">
+        No Drama.<span class="star-lime inline-star">*</span><br>
+        No Fluff.<br>
+        <span class="hl-red">Just Impact.</span>
+        <svg class="ul-lime-3" viewBox="0 0 280 20" aria-hidden="true"><path d="M6 11 C90 3 190 17 274 7" fill="none" stroke="#b9e529" stroke-width="5" stroke-linecap="round"/></svg>
+      </h2>
+
+      <div class="note note-steps">
+        <span class="tape tape-1"></span>
+        Four Steps.<br>All Gas.
+        <svg class="ul-lime" viewBox="0 0 110 12"><path d="M4 7 C40 2 80 11 106 5" fill="none" stroke="#b9e529" stroke-width="3" stroke-linecap="round"/></svg>
+      </div>
+
+      <div class="process-collage" aria-hidden="true">
+        <svg class="wire-globe" viewBox="0 0 120 120" fill="none" stroke="#f1f0ea" stroke-width=".7" opacity=".5"><circle cx="60" cy="60" r="50"/><ellipse cx="60" cy="60" rx="20" ry="50"/><ellipse cx="60" cy="60" rx="38" ry="50"/><path d="M10 60 h100 M16 38 h88 M16 82 h88"/></svg>
+        <div class="ph ph-concert"></div>
+        <span class="marker-ss marker-script">Scribble<br>Street<span class="star-lime">*</span></span>
+        <svg class="scrawl-bw" viewBox="0 0 80 40"><path d="M4 34 C 20 8, 34 38, 48 16 S 76 14, 78 28" fill="none" stroke="#f1f0ea" stroke-width="1.4" opacity=".5" stroke-linecap="round"/></svg>
+      </div>
+
+      <div class="barcode barcode-2" aria-hidden="true"></div>
+      <span class="barcode-label" aria-hidden="true">SS360 2024 0001</span>
+    </div>
+
+    <div class="process-steps">
+      <article class="step reveal">
+        <div class="step-top"><span class="step-num">01<span class="dot-lime">.</span></span>
+          <svg class="step-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ph step-img ph-eye"><span class="circle-mark"></span></div>
+        <h3 class="step-label">Decode</h3>
+        <p class="step-desc">We dig deep to get the real picture—your brand, audience, market, and what actually matters.</p>
+      </article>
+
+      <article class="step reveal">
+        <div class="step-top"><span class="step-num">02<span class="dot-lime">.</span></span>
+          <svg class="step-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ph step-img ph-red-cards"><span class="marker-ss small-ss">SS<span class="star-lime">*</span></span></div>
+        <h3 class="step-label">Shape</h3>
+        <p class="step-desc">We shape the big idea, strategy, tone, and visual direction that sets everything up for impact.</p>
+      </article>
+
+      <article class="step reveal">
+        <div class="step-top"><span class="step-num">03<span class="dot-lime">.</span></span>
+          <svg class="step-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ph step-img ph-portrait-2"><span class="first-draft">First<br>Draft<small>10:24 PM</small></span></div>
+        <h3 class="step-label">Create</h3>
+        <p class="step-desc">We bring it to life across design, copy, film, motion, content, packaging, digital—everything your brand needs to show up and stand out.</p>
+      </article>
+
+      <article class="step reveal">
+        <div class="step-top"><span class="step-num">04<span class="dot-lime">.</span></span>
+          <svg class="step-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ph step-img ph-concert-2"><span class="circle-arrow"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" fill="none" stroke="#b9e529" stroke-width="1.6"/><path d="M14 26 L26 14 M17 14 h9 v9" fill="none" stroke="#b9e529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <h3 class="step-label">Launch</h3>
+        <p class="step-desc">We launch with purpose. Across the right channels, in the right way—built to connect, convert, and create real movement.</p>
+      </article>
+    </div>
+
+    <div class="process-foot reveal">
+      <span class="tape-banner tape-banner-gray"><span class="star-lime">✳</span> Good Process. Great Work.</span>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA ===== -->
+  <section class="contact" id="contact">
+    <div class="contact-inner reveal">
+      <p class="eyebrow eyebrow-red">Start A Project</p>
+      <h2 class="contact-title">
+        Let's Make<br>Something <span class="hl-red">Loud.</span>
+        <svg class="ul-lime-2" viewBox="0 0 260 20" aria-hidden="true"><path d="M6 11 C80 3 180 17 254 7" fill="none" stroke="#b9e529" stroke-width="4.5" stroke-linecap="round"/></svg>
+      </h2>
+      <p class="contact-sub">No slow decks. No safe ideas. Just bold work, made to be noticed.</p>
+
+      <div class="contact-actions">
+        <a href="mailto:hello@scribblestreet.studio" class="btn btn-red">
+          hello@scribblestreet.studio
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#" class="btn btn-ghost">Book A Call
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <span class="star-red contact-star" aria-hidden="true">*</span>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a href="#top" class="logo footer-logo">
+        <span class="logo-text">Scribble<br>Street</span>
+        <span class="logo-star">*</span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">X / Twitter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Scribble Street. No rules. Just impact.</span>
+      <span class="footer-tag">Creative that hits different.<span class="star-lime">*</span></span>
+      <div class="barcode barcode-foot" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
