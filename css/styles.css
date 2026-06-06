@@ -589,3 +589,59 @@ section{position:relative}
   .cards{grid-template-columns:1fr}
   .hero-foot{justify-content:space-between}
 }
+
+/* ============================================================
+   GENERATED PHOTOGRAPHY
+   Real AI-generated photos hotlinked from the Higgsfield CDN,
+   layered OVER the CSS gradients so the styled fallback shows
+   if a URL is ever unreachable. To self-host: download each and
+   replace the url() with a local /assets path.
+   ============================================================ */
+:root{
+  --img-city:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065135_1ea383e3-d67c-443b-9dd9-c0bc31b9adc6.png");
+  --img-portrait:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065336_832b437c-d9bc-4bed-8796-aa19e618e347.png");
+  --img-concert:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065341_e92efe7d-697f-4bb7-ab73-fa53d939920b.png");
+  --img-athlete:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065402_ba8317f3-183b-43d0-81ab-0067667034df.png");
+  --img-lime:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065406_f464ccca-e01a-46b5-9906-710d1835a717.png");
+  --img-figure:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065411_450b8d74-f850-48a8-a66d-35582e28726f.png");
+  --img-box:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065346_64457242-4fdd-4414-a470-7c1cfdd5cea1.png");
+  --img-bottle:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065350_51694972-3a3f-4e6e-a012-cb6933526714.png");
+  --img-jar:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065355_0cc5f6fe-7a43-4bb3-a978-5683e48715cd.png");
+  --img-deck:url("https://d8j0ntlcm91z4.cloudfront.net/user_2wlLTfpiK9o9JogVYtSmTLvehjl/hf_20260606_065418_f999b0d6-7b83-4cb9-9a99-810297619dcc.png");
+}
+.ph-city,.ph-portrait-bw,.ph-concert,.ph-laptop,.ph-lime-portrait,.ph-rise,
+.ph-box-dark,.ph-red-product,.ph-phone,.ph-deck,.ph-eye,.ph-portrait-2,
+.ph-concert-2,.ph-portrait-1{background-repeat:no-repeat;background-size:cover;background-position:center}
+
+/* collages */
+.ph-city{background-image:var(--img-city),linear-gradient(180deg,#05070d,#0a0f17 55%,#10161f)}
+.ph-city::before{display:none}
+.ph-portrait-bw{background-image:var(--img-portrait),linear-gradient(155deg,#2e2e30,#0c0c0d);background-position:center 18%}
+.ph-portrait-bw::before{display:none}
+.ph-concert{background-image:var(--img-concert),radial-gradient(80% 100% at 50% 100%,#b3161c,#3a0608 60%,#0c0203)}
+
+/* work tiles */
+.ph-box-dark{background-image:var(--img-box),radial-gradient(120% 100% at 50% 30%,#202022,#0c0c0d 70%)}
+.ph-box-dark::before{display:none}
+.ph-red-product{background-image:var(--img-bottle),radial-gradient(120% 120% at 60% 20%,#c01a22,#3a0608 70%)}
+.ph-red-product::before{display:none}
+.ph-portrait-1{background-image:var(--img-portrait),linear-gradient(160deg,#2a2a2c,#0e0e10);background-position:center 16%}
+.ph-portrait-1::before{display:none}
+.ph-rise{background-image:var(--img-figure),linear-gradient(120deg,#1a0506,#5a1014 55%,#10171f)}
+.ph-laptop{background-image:var(--img-athlete),linear-gradient(160deg,#1c1c1f,#0a0a0b)}
+.ph-deck{background-image:var(--img-deck),linear-gradient(150deg,#1a1a1d,#070708)}
+.ph-lime-portrait{background-image:var(--img-lime),linear-gradient(150deg,#7c9a14,#b9e529 50%,#3f5108)}
+.ph-lime-portrait::before{display:none}
+.ph-phone{background-image:var(--img-jar),radial-gradient(120% 110% at 60% 30%,#8a1118,#2a0507 70%)}
+
+/* process steps */
+.ph-eye{background-image:var(--img-portrait),linear-gradient(150deg,#1c1c1e,#080809);background-position:center 12%}
+.ph-eye::before{display:none}
+.ph-portrait-2{background-image:var(--img-portrait),linear-gradient(150deg,#262628,#0a0a0b);background-position:center 16%}
+.ph-portrait-2::before{display:none}
+.ph-concert-2{background-image:var(--img-concert),radial-gradient(90% 100% at 50% 100%,#3a3a3e,#0a0a0b 65%)}
+.ph-concert-2::before{display:none}
+
+/* darken photos slightly so overlaid type stays legible */
+.proj-img::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.35));z-index:1;pointer-events:none}
+.proj-overlay,.proj-rise,.proj-rise-sub,.proj-built,.proj-deck,.proj-fuel,.proj-jacked,.proj-jacked-sub{position:relative;z-index:2}

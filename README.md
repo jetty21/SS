@@ -51,13 +51,29 @@ python3 -m http.server 8000
 └── assets/         # drop real photography / brand imagery here
 ```
 
-## ✦ Swapping in real photography
+## ✦ Photography
 
-The photographic areas of the collages and project tiles use mood-matched
-**CSS/SVG placeholders** (`.ph-*` classes) so the site always renders with no
-external assets. To use real imagery, drop files into `assets/` and replace the
-relevant `.ph-*` element's `background` with `url(...)` — class names are
-descriptive (`.ph-city`, `.ph-portrait-1`, `.ph-rise`, `.ph-laptop`, etc.).
+The collages and project tiles use **real AI-generated photography** (night
+skyline, moody street portraits, concert crowd, and product shots) that match the
+dark / red / lime mood of the design. The image URLs are defined once as CSS
+variables at the bottom of `css/styles.css`:
+
+```css
+:root{
+  --img-city:url("…");      --img-portrait:url("…");
+  --img-concert:url("…");   --img-athlete:url("…");
+  /* …etc */
+}
+```
+
+Each photo is layered **over** its original CSS gradient, so if a URL is ever
+unreachable the styled gradient shows through — the page never breaks.
+
+**To self-host** (recommended for production): download each image into `assets/`
+and change the `url(...)` in the `:root` block to a local path, e.g.
+`--img-city:url("assets/city.png");`. The class names are descriptive
+(`.ph-city`, `.ph-portrait-bw`, `.ph-rise`, `.ph-laptop`, `.ph-phone`, …) if you
+prefer to wire your own brand photography instead.
 
 ---
 
