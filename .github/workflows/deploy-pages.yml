@@ -1,14 +1,13 @@
 name: Deploy to GitHub Pages
 
-# Publishes the static site (repo root) to GitHub Pages.
-# Source must be set to "GitHub Actions" — `configure-pages` with
-# enablement:true attempts to turn that on automatically.
+# OPTIONAL / manual. The simplest way to publish this static site is
+# Settings -> Pages -> "Deploy from a branch" (root) -- no Actions needed.
+#
+# If you prefer the Actions source instead: set Settings -> Pages ->
+# Source = "GitHub Actions" once (the token can't auto-create the site),
+# then run this workflow from the Actions tab ("Run workflow").
 
 on:
-  push:
-    branches:
-      - claude/fervent-archimedes-sBzuS
-      - main
   workflow_dispatch:
 
 permissions:
